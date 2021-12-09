@@ -3,6 +3,9 @@ Team 1
 
 Ryan Montecalvo
 Joshua Ferreras
+Reymart Rodas
+Mariel Bucog
+John Christian Macan
 
 Procedure:
 
