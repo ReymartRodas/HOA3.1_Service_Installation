@@ -2,14 +2,14 @@
 # tasks file for mariadb
 - name: Install mariadb for CentOS
   dnf: 
-    name: mariadb
+    name: mariadb-server
     state: latest
     update_cache: yes
   when: ansible_distribution == "CentOS"
 
 - name: Install mariadb for Ubuntu
   apt:
-    name: mariadb
+    name: mariadb-server
     state: latest
     update_cache: yes
   when: ansible_distribution == "Ubuntu"
