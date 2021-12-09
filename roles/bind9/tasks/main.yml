@@ -1,0 +1,14 @@
+---
+# tasks file for bind9_centos
+- name: Install bind9 for Ubuntu
+  apt:
+   name: bind9
+   update_cache: yes
+  when: ansible_distribution == "Ubuntu"
+
+- name: Install bind9 for CentOS
+  dnf:
+   name: bind
+   state: latest
+   update_cache: yes
+  when: ansible_distribution == "CentOS"
